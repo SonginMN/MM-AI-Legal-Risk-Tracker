@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史版本 - 全球AI法律风险追踪</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+        }
+        .back-link:hover { background: rgba(255,255,255,0.3); }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .year-section { margin-bottom: 2rem; }
+        .year-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        .archive-list { list-style: none; }
+        .archive-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .archive-item:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+        .archive-info h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+        .archive-info p { font-size: 0.85rem; color: var(--text-secondary); }
+        .archive-link {
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        .archive-link:hover { background: #1d4ed8; }
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+        .empty-state svg { width: 48px; height: 48px; margin-bottom: 1rem; opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>历史版本</h1>
+        <p>全球AI法律风险追踪 - 报告归档</p>
+        <a href="../index.html" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            返回当前版本
+        </a>
+    </header>
+    
+    <div class="container">
+        <section class="year-section">
+            <h2 class="year-title">2026年</h2>
+            <ul class="archive-list">
+                <li class="archive-item">
+                    <div class="archive-info">
+                        <h3>2026年1月第5周报告</h3>
+                        <p>2026-01-29 发布 · 当前版本</p>
+                    </div>
+                    <a href="../index.html" class="archive-link">查看</a>
+                </li>
+                <!-- 未来版本将在此处添加 -->
+            </ul>
+        </section>
+        
+        <div class="empty-state" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <p>暂无历史版本</p>
+        </div>
+    </div>
+</body>
+</html>
