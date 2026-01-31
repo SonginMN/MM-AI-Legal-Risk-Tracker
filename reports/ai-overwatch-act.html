@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度报告：美国《AI监察法案》(H.R. 6875)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --p0-color: #dc2626;
+            --p0-bg: #fef2f2;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+        .header {
+            background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+            color: white;
+            padding: 2rem;
+        }
+        .header .back-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .header .back-link:hover { color: white; }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header .meta { opacity: 0.9; font-size: 0.9rem; }
+        .priority-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .report-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .report-section h2 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+        .report-section h3 { font-size: 1rem; margin: 1.5rem 0 0.75rem; color: var(--text); }
+        .report-section p { margin-bottom: 1rem; color: var(--text-secondary); }
+        .report-section ul, .report-section ol { padding-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary); }
+        .report-section li { margin-bottom: 0.5rem; }
+        .highlight-box {
+            background: var(--p0-bg);
+            border-left: 4px solid var(--p0-color);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p { margin: 0; color: var(--text); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #f8fafc; font-weight: 600; }
+        .source-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.5rem 0.75rem;
+            background: #f1f5f9;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .source-link:hover { background: var(--primary); color: white; }
+        .footer { text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            返回追踪器首页
+        </a>
+        <div>
+            <span class="priority-badge">P0 最高优先级</span>
+            <span class="priority-badge">进出口管制</span>
+        </div>
+        <h1>美国《AI监察法案》(H.R. 6875)</h1>
+        <p class="meta">AI OVERWATCH Act | 提出日期: 2026-01-28 | 报告更新: 2026-01-31</p>
+    </header>
+    
+    <div class="container">
+        <div class="report-section">
+            <h2>一、法案概述</h2>
+            <p>《AI OVERWATCH法案》(Oversight and Verification of Emerging and Rapidly-evolving Watching Artificial Technology from China and Hostile entities, H.R. 6875) 是一项两党联合提出的法案，旨在加强对中国AI公司（特别是DeepSeek）的监管，防止美国技术被用于开发威胁国家安全的AI系统。</p>
+            
+            <div class="highlight-box">
+                <p><strong>法案全称：</strong>Oversight and Verification of Emerging and Rapidly-evolving Watching Artificial Technology from China and Hostile entities Act（针对中国及敌对实体的新兴快速发展人工智能技术监察与核查法案）</p>
+            </div>
+        </div>
+        
+        <div class="report-section">
+            <h2>二、立法背景</h2>
+            <h3>2.1 DeepSeek事件</h3>
+            <p>该法案的提出与中国AI公司DeepSeek的崛起直接相关。DeepSeek在2025-2026年期间快速发展，其AI模型性能接近甚至超越部分美国领先AI公司，引发美国国会对技术外流的严重关切。</p>
+            
+            <h3>2.2 国会关切</h3>
+            <ul>
+                <li>DeepSeek可能使用了美国受限技术（如Nvidia芯片）进行训练</li>
+                <li>中国AI技术可能被用于军事目的</li>
+                <li>美国技术优势面临被追赶甚至超越的风险</li>
+                <li>现有出口管制体系可能存在漏洞</li>
+            </ul>
+        </div>
+        
+        <div class="report-section">
+<h2>三、法案主要内容</h2>
+            <h3>3.1 监管要求</h3>
+            <table>
+                <tr><th>监管领域</th><th>具体要求</th></tr>
+                <tr><td>技术流动评估</td><td>要求商务部评估美国技术被用于外国AI开发的风险</td></tr>
+                <tr><td>中国AI公司审查</td><td>对DeepSeek等中国AI公司实施专项审查</td></tr>
+                <tr><td>出口管制强化</td><td>审查现有出口管制的有效性，提出改进建议</td></tr>
+                <tr><td>跨部门协调</td><td>建立商务部、国防部、情报机构协调机制</td></tr>
+            </table>
+            
+            <h3>3.2 报告要求</h3>
+            <p>法案要求在生效后180天内向国会提交报告，内容包括：</p>
+            <ul>
+                <li>中国AI公司技术来源分析</li>
+                <li>美国技术外流风险评估</li>
+                <li>现有出口管制漏洞识别</li>
+                <li>强化管控的具体建议</li>
+            </ul>
+        </div>
+        
+        <div class="report-section">
+            <h2>四、影响评估</h2>
+            <h3>4.1 受影响实体</h3>
+            <ul>
+                <li><strong>中国AI公司</strong>：DeepSeek、阿里云、腾讯AI等将面临更严格审查</li>
+                <li><strong>美国科技公司</strong>：与中国AI公司有任何技术合作的企业需审慎评估</li>
+                <li><strong>云服务提供商</strong>：提供给中国客户的AI计算服务可能受限</li>
+                <li><strong>投资机构</strong>：对中国AI公司的投资将面临更高合规风险</li>
+            </ul>
+            
+            <h3>4.2 潜在影响</h3>
+            <div class="highlight-box">
+                <p><strong>短期影响：</strong>使用中国AI模型API的企业需评估合规风险</p>
+                <p><strong>中期影响：</strong>中美AI技术脱钩可能加速</p>
+                <p><strong>长期影响：</strong>全球AI产业格局可能重塑</p>
+            </div>
+        </div>
+        
+        <div class="report-section">
+            <h2>五、立法进程</h2>
+            <p>当前状态：众议院审议中</p>
+            <ul>
+                <li><strong>2026-01-28</strong>：两党议员联合提出法案</li>
+                <li><strong>待定</strong>：众议院相关委员会审议</li>
+                <li><strong>待定</strong>：众议院全体投票</li>
+                <li><strong>待定</strong>：参议院审议</li>
+            </ul>
+            <p>鉴于该法案获得两党支持，且与当前中美科技竞争态势高度相关，预计立法进程将较为顺利。</p>
+        </div>
+        
+        <div class="report-section">
+            <h2>六、合规建议</h2>
+            <ol>
+                <li><strong>审查中国AI技术使用情况</strong>：盘点企业内部使用的中国AI模型、API和服务</li>
+                <li><strong>评估供应链风险</strong>：检查供应商是否使用中国AI技术</li>
+                <li><strong>准备替代方案</strong>：识别可替代的非中国AI解决方案</li>
+                <li><strong>关注立法进展</strong>：密切跟踪法案审议进程和最终文本</li>
+                <li><strong>咨询法律意见</strong>：就具体业务影响咨询出口管制专业律师</li>
+            </ol>
+        </div>
+        
+        <div class="report-section">
+            <h2>七、参考资料</h2>
+            <a href="https://www.congress.gov/bill/119th-congress/house-bill/6875" target="_blank" class="source-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                法案原文 (Congress.gov)
+            </a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>全球AI法律风险追踪 - 深度研究报告</p>
+        <p>报告生成时间: 2026-01-31 | Created by Matrix Agent</p>
+    </footer>
+</body>
+</html>
